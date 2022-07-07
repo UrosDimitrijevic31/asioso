@@ -1,0 +1,21 @@
+.details {
+    margin-bottom: 150px;
+
+    .image-container-details {
+        background-image: url("../../assets/background2.jpg");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        padding: 5em;
+    }
+    .right {
+        text-align: left;
+
+        h2 {
+            margin-bottom: 0;
+        }
+        p {
+            margin: 20px 0 50px 0;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+// @import "src/styles/index.scss";
+
+.image-card-wrapper {
+    background-color: black;
+    color: white;
+
+    .card {
+        padding: 30px 20px 20px 20px;
+        width: 100%;
+        border-radius: 10px !important;
+        background-size: cover;
+        opacity: 0.75;
+        color: white;
+
+        .card-body {
+            text-align: left;
+        }
+
+        .btn {
+            margin-top: 50px;
+        }
+    }
+}

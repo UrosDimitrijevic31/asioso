@@ -1,0 +1,39 @@
+.header-content {
+    padding-top: 15%;
+    padding-bottom: 15%;
+
+    background-image: url("../../../assets/header.jpg");
+    background-size: cover;
+    // margin-left: 0;
+
+    .row {
+        text-align: left;
+    }
+    h1 {
+        font-size: 78px;
+        color: white;
+    }
+
+    p,
+    span {
+        color: white;
+    }
+
+    .buttons-container {
+        margin-top: 2em;
+    }
+
+    .watch-button {
+        margin: 0 15px;
+        border-radius: 50%;
+    }
+
+    .explore-div {
+        padding: 15px;
+        margin-right: 10px;
+        width: 150px;
+        display: inline;
+        color: white;
+        border: 1px solid white;
+    }
+}
