@@ -1,9 +1,23 @@
 import classnames from "classnames";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { useState } from "react";
+import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import "./index.scss";
 
 const Newsletter = () => {
     const className = classnames("newsletter align-middle");
+    const [email, setEmail] = useState("");
+
+    const handleOnChange = (e) => {
+        setEmail(e.target.value);
+    };
+
+    const handleSubmit = (e) => {
+        const validEmail = new RegExp(
+            "^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$"
+        );
+        if (validEmail.test(email)) alert("successfully subscribed!");
+        e.preventDefault();
+    };
 
     return (
         <Container className={className} fluid>
@@ -16,9 +30,16 @@ const Newsletter = () => {
                     <p>Subscribe to our newsletter and stay updated</p>
                 </Col>
                 <Col className="right-div">
-                    <input type="text" />
-                    <Button type="submit">Subscribe</Button>
+                    <form onSubmit={handleSubmit}>
+                        <input
+                            type="email"
+                            placeholder="email address"
+                            onChange={handleOnChange}
+                        />
+                        <Button type="submit">Subscribe</Button>
+                    </form>
                 </Col>
+                c
             </Row>
         </Container>
     );
