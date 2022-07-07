@@ -10,7 +10,7 @@ const Services = () => {
         <Container className="services-wrapper">
             <Row className="text-container">
                 <Col>
-                    <span>ovo su tri reci? </span>
+                    <span>Lorem ipsum dolor sit? </span>
                     <h2>
                         <small>Our</small> focus
                     </h2>

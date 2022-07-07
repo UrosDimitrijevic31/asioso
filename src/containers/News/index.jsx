@@ -15,7 +15,6 @@ const News = () => {
     useEffect(() => {
         getData()
             .then((res) => {
-                console.log(res);
                 setFetchedData(res.articles);
             })
             .catch((err) => {
