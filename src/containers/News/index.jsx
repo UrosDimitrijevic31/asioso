@@ -23,7 +23,7 @@ const News = () => {
     }, []);
 
     const newsCards = fetchedData.slice(0, 3).map((card) => (
-        <Col key={card.content}>
+        <Col key={card.content} md={12} lg={4} sm={12} className="mb-2">
             <NewsCard
                 date={card.publishedAt}
                 title={card.title}
