@@ -17,21 +17,21 @@ const Services = () => {
                 </Col>
             </Row>
             <Row className="card-container">
-                <Col>
+                <Col md={4} lg={4} sm={12} className="mb-2">
                     <CardContainer
                         title="Customer"
                         subtitle="Customer experience"
                         backgroundImage={customer}
                     />
                 </Col>
-                <Col>
+                <Col md={4} lg={4} sm={12} className="mb-2">
                     <CardContainer
                         title="Content"
                         subtitle="Web content management"
                         backgroundImage={content}
                     />
                 </Col>
-                <Col>
+                <Col md={4} lg={4} sm={12} className="mb-2">
                     <CardContainer
                         title="Touchpoints"
                         subtitle="Content as a service"
